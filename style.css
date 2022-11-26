@@ -1,0 +1,277 @@
+/* CSS RESET*/
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variable*/
+/* :root{
+   -- navbar: height 59px;
+} */
+*/ navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position:relative; */
+}
+/* Navigation bar:logo and image*/
+#logo{
+margin-bottom:5px
+
+}
+#navbar{
+    position: sticky;
+}
+#logo img{
+margin: 0px;
+height: 5px;
+z-index:-1;
+opacity: 2.4;
+display: absolute;
+}
+#navbar ul{
+    display: flex;
+    margin-left: 100px;
+}
+#navbar::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;   
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 22px;
+}
+#navbar ul li a{
+    display: flex;
+    padding:0px 22px;
+    border-radius:20px; 
+    text-decoration: none;  
+    color:white; 
+    margin-bottom: 5px;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/*Home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    align-items: center;
+    justify-content: center;
+    height:8px;
+    margin-top: 85px;
+    margin-bottom:10px;
+}
+#bg{
+    content: "";
+    position: absolute;
+    background-position:no-repeat cover center/center;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 80vh;
+    z-index: -1;
+    opacity: 0.65;
+}
+.btn{
+    border-radius: 10px;
+    background-color:brown;
+    color: White;
+ padding: 6px 20px;
+ font-size: 1.5rem;
+}
+p{
+    font-weight: 10px;
+}
+/* #home::before{
+    content: "";
+    position: absolute;
+    background: url('./bg1.jpg') no-repeat cover center center/center;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.95;   
+
+} 
+/* Services Section */
+.Services-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+#Services{
+    /* margin-left:5px 150px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    display: absolute;
+    border: 5px solid brown;
+    margin-bottom:242px;
+    
+    justify-items: center;
+    padding-left: 12px;
+    background-color:white;
+    z-index: -1;
+    width: 272px;
+    height:200px;
+    
+}
+.box img{
+    height:200px;
+    width: 270px;
+    
+    /* margin-top:auto; */
+    /* display: block; */
+    font-size: 49px;
+
+    
+}
+/* #1{ */
+    /* margin-bottom: 100px; */
+/* } */
+/* Utility Classes */
+.h-primary{
+    font-size:2.8rem;
+    padding:33px;
+    padding-bottom: 2px; 
+    /* margin-left: 400px; */
+    margin-top:200px;
+    
+     color: rgb(8, 2, 2);
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+    margin:0px 10px;
+    color:black;
+}
+/* .box p{ */
+    /* border: 5px solid brown;
+} */
+/* client section */
+#client-section{
+border:4px solid brown;
+height: 344px;
+margin-bottom:34px;
+position: relative;
+padding-bottom: 50px;
+bottom: 500px;
+}
+
+#client-section h1{
+    padding-left: 430px;
+    font-size: 3.5rem;
+    margin-top: 400px;
+}
+#bg1{
+    content: "";
+    position: absolute;
+    background-position:no-repeat cover center/center;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 50vh;
+    z-index: -1;
+    opacity: 0.65;
+}
+#clients{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5px;
+    border: 5px solid rgb(173, 161, 161);
+    background-color: rgb(207, 224, 224);
+    border-width: 50px;
+
+}
+
+.client-item{
+    padding:4px;
+} 
+#clients img{
+ height:100px;
+ width:100%;
+ opacity:8.5;
+}
+/* contact Section */
+#contact{
+    border-color: 2px solid brown;
+    position: relative;
+    bottom:200px;
+    width:100%;
+    height:100%;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.4;
+    background: url(../1.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+    /* bottom:100px; */
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 2.3rem;
+}
+#contact-box input{
+font-size: 1.5rem;
+}
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+font-size:1.5 ;
+}
+#contact h1{
+    padding-left:430px;
+    font-size:3.5rem;
+    margin-top:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
